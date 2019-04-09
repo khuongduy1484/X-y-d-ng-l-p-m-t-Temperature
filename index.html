@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<canvas id="mycanvas"width="200"height="100" ></canvas>
+<body>
+<script>
+    let Temperature = function (c,f,k) {
+        this.c = c;
+        this.f = f;
+        this.k = k;
+    }
+    function chuyendoinhietdo() {
+        let c = parseInt(prompt('Nhập độ F'));
+        let f = c * 1.8 + 32;
+        let k = c + 273.15
+        alert("Độ F là " + f);
+        alert("Độ Kenvin là " + k);
+    }
+    chuyendoinhietdo();
+</script>
+
+</body>
+</html>
